@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">EasyWeather</string>
+    <string name="update">Update</string>
+    <string name="autoupdate">Auto-Update</string>
+    <string name="today">Today</string>
+    <string name="prediction">Weather Prediction</string>
+    <string name="l">Monday</string>
+    <string name="t">Tuesday</string>
+    <string name="w">Wednesday</string>
+    <string name="tt">Thursday</string>
+    <string name="f">Friday</string>
+    <string name="s">Saturday</string>
+    <string name="ss">Sunday</string>
+    <string name="updateButton">Update</string>
+    <array name="cities">
+
+        <item>Las Palmas</item>
+        <item>NewYork</item>
+        <item>Madrid</item>
+        <item>Taiwan</item>
+
+    </array>
+</resources>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_Info">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/actualCitie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/today"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                app:fontFamily="monospace" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/thermometer" />
+
+                <TextView
+                    android:id="@+id/temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:fontFamily="monospace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/drop" />
+
+                <TextView
+                    android:id="@+id/rain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    app:fontFamily="monospace" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/sea" />
+
+                <TextView
+                    android:id="@+id/sea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    app:fontFamily="monospace" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/wind" />
+
+                <TextView
+                    android:id="@+id/wind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    app:fontFamily="monospace" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp"
+                    android:layout_weight="1"
+                    android:accessibilityHeading="false"
+                    android:text="@string/prediction"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    app:fontFamily="monospace" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="@string/l"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                                android:textSize="18sp"
+                                android:typeface="normal"
+                                app:fontFamily="monospace" />
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@mipmap/ic_launcher" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="@string/t"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                                android:textSize="18sp"
+                                android:typeface="normal"
+                                app:fontFamily="monospace" />
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@mipmap/ic_launcher" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="@string/w"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                                android:textSize="18sp"
+                                android:typeface="normal"
+                                app:fontFamily="monospace" />
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@mipmap/ic_launcher" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="@string/tt"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                                android:textSize="18sp"
+                                android:typeface="normal"
+                                app:fontFamily="monospace" />
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@mipmap/sunny" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="@string/f"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                                android:textSize="18sp"
+                                android:typeface="normal"
+                                app:fontFamily="monospace" />
+
+                            <ImageView
+                                android:id="@+id/imageView15"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@mipmap/ic_launcher" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="@string/s"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                                android:textSize="18sp"
+                                android:typeface="normal"
+                                app:fontFamily="monospace" />
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@mipmap/ic_launcher" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:text="@string/ss"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                                android:textSize="18sp"
+                                android:typeface="normal"
+                                app:fontFamily="monospace" />
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@mipmap/ic_launcher" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/updateButton" />
+
+        <Spinner
+            android:id="@+id/spinnerCities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/cities" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
